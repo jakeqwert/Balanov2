@@ -6,12 +6,17 @@ import sys
 def normalize(name):
     # TODO1 function to normalize ü,ö,ä etc.
     name = name.lower()
-    name = re.sub(r'[ùúûü]', 'ue', name)
-    name = re.sub(r'[òóôõö]', 'oe', name)
-    name = re.sub(r'[àáâãäå]', 'ae', name)
-    name = re.sub(r'[èéêë]', 'ee', name)
-    name = re.sub(r'[ìíîï]', 'ie', name)
+    name = re.sub(r'[ü]', 'ue', name)
+    name = re.sub(r'[õö]', 'oe', name)
+    name = re.sub(r'[âãäå]', 'ae', name)
+    name = re.sub(r'[êë]', 'ee', name)
+    name = re.sub(r'[îï]', 'ie', name)
     # name = unicodedata.normalize('NFD', name)
+    name = re.sub(r'[ùúû]', 'u', name)
+    name = re.sub(r'[òóô]', 'o', name)
+    name = re.sub(r'[àá]', 'a', name)
+    name = re.sub(r'[èé]', 'e', name)
+    name = re.sub(r'[ìí]', 'i', name)
     return name
 
 
