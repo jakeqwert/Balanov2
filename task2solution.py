@@ -5,7 +5,6 @@
 
 import sys
 
-import nltk
 from nltk.corpus import stopwords
 
 count_dicts = []
