@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Author(s):
+# date:
+
 import os
 import re
 import sys

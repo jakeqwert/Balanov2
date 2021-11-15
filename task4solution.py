@@ -32,6 +32,6 @@ if __name__ == '__main__':
     main()
 
 # cmd
-# python task4h.py "Zurich, Geneva" en
-# python task4h.py Zurich en
-# python task4h.py Zurich
+# python task4solution.py "Zurich, Geneva" en
+# python task4solution.py Zurich en
+# python task4solution.py Zurich
