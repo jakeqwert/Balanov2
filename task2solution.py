@@ -13,7 +13,7 @@ count_dicts = []
 def main():
     stopwords_flag = False
     # You do not have to make your script work with only the parameter –stopwords and no number in front of it
-    if len(sys.argv) == 5 and sys.argv[4] == '--stopwords':
+    if '--stopwords' in sys.argv:
         stopwords_flag = True
         # stopwords.words("russian")
         stopwords_list = stopwords.words("German") + stopwords.words("English") + stopwords.words("French")
