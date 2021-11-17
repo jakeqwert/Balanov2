@@ -15,12 +15,21 @@ def create_sentiment_dict(filename):
         pattern = re.compile(r'\t')
         for line in file_lines:
             adjective, sentiment = pattern.split(line)
-            if sentiment == 'positive':
-                sentiment_dict[adjective] = 1
-            elif sentiment == 'neutral':
-                sentiment_dict[adjective] = 0
-            elif sentiment == 'negative':
-                sentiment_dict[adjective] = -1
+
+            # if sentiment == 'positive':
+            #     sentiment_dict[adjective] = 1
+            # elif sentiment == 'neutral':
+            #     sentiment_dict[adjective] = 0
+            # elif sentiment == 'negative':
+            #     sentiment_dict[adjective] = -1
+
+            switch = {
+              'positive': 1,
+              'neutral':  0,
+              'negative': -1,
+            }.get(sentiment)
+            sentiment_dict[adjective] = switch
+
     return sentiment_dict
 
 
