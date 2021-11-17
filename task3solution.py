@@ -63,3 +63,6 @@ if __name__ == '__main__':
 
 # cmd
 # python task3solution.py adjective_sentiment.txt test_hobbies.txt
+# 0.19107106287118575
+# python task3solution.py adjective_sentiment.txt test_news.txt
+# 0.1254553734061931
