@@ -4,15 +4,15 @@
 # date:
 
 import sys
-
+# import nltk
 from nltk.corpus import stopwords
 
 count_dicts = []
 
 
 def main():
+    # nltk.download('stopwords')
     stopwords_flag = False
-    # You do not have to make your script work with only the parameter –stopwords and no number in front of it
     if '--stopwords' in sys.argv:
         stopwords_flag = True
         # stopwords.words("russian")
@@ -25,7 +25,7 @@ def main():
             file_words = f.read().split()
             counts = {}
             for word in file_words:
-                if word.isalpha() and (not stopwords_flag or (stopwords_flag and not(word in stopwords_list))):
+                if word.isalpha() and (not stopwords_flag or (stopwords_flag and not (word in stopwords_list))):
                     # current_count = counts.pop(word, 0)
                     # counts.update({word: current_count + 1})
                     current_count = counts.get(word, 0)
