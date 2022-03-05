@@ -10,7 +10,6 @@ import re
 
 
 def main():
-    print(sys.argv)
     filename = sys.argv[1]
     if filename == '--min-words':
         count_words = int(sys.argv[2])
